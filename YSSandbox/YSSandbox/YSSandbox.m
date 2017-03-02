@@ -33,7 +33,7 @@
 }
 
 + (NSString *)tmpPath {
-    return [NSHomeDirectory() stringByAppendingString:@"/tmp"];
+    return NSTemporaryDirectory();
 }
 
 + (BOOL)hasLive:(NSString *)path
